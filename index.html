@@ -150,40 +150,24 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
                                                     ~.       _  .    ..    _~  `           .   ~1===
                                                       ~_      ~      ~`    _~             .`     +==
      `                                                 <~      ~          .`_            .`     .+==
-        `                                               __      .     _   _  _    `   .~._`     (==?
-                                                         ~`     `     _   ~  ~       ._`       .1===
-     `                                          `      ~              .  -    _   ._          .+==?=
-          `    `    `    `  `  `  `  `     `     ~<`   `         `    .  `                   `(?==?=
-                                                              `       . _                     <=?==?
-                      `                 `     `                     ` ..`                     +==?==
-     `   `    `  `                                        `           (~                     .+===?=
-                         `  `  `  `  `      `          `     `   `    !             `  `  `  -==?==?
-                    `                              `                 .         `             (===?==
-     `   `    `                           `    `                   ` ~            `         .+==?===
-                      `                               `   `  `  `   _       `              `(==?==?=
  -->
 
 
 
     <a-scene>
 
-      <!-- カーソルを作る -->
-    	<a-entity camera look-controls wasd-controls>
-        	<a-entity cursor="fuse: true;" fuseTimeout: 1000"
-                  position="0 0 -3"
-                  geometry="primitive: ring; radiusInner: 0.1; radiusOuter: 0.15;"
-                  material="color: #acacac; shader: flat; opacity: 0.8">
-                  
-                  <a-animation begin="click" easing="ease-in" attribute="scale" dur="150"
-                  fill="forwards" from="0.1 0.1 0.1" to="1 1 1">
-                  </a-animation>
-                
-                  <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1500"
-                  fill="backwards" from="1 1 1" to="0.1 0.1 0.1">
-                  </a-animation>
+     
 
-        	</a-entity>
-    	</a-entity>
+      <!-- カーソルを作る -->
+
+
+    <a-camera position="0 0 0">
+      <a-entity cursor="fuse: true; fuseTimeout: 2500" position="0 0 -1" geometry="primitive: ring" scale="0.03 0.03 0.03" material="color: gray; shader: flat">
+        <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" fill="none" from="0.03 0.03 0.03" to="0.001 0.001 0.001">
+        </a-animation>
+      </a-entity>
+    </a-camera>
+
 
       
     <!-- 空の色 -->
@@ -191,9 +175,10 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
     <a-sky radius="200" theta-length="110" material="shader:gradientshader;topColor:#1d2b64;bottomColor:#f8cdda" geometry="" visible="" id="sky" position="">
     </a-sky>
 
+
     
     <!-- text -->
-      
+
     <a-entity position="0.7 0.6 -1" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: arisa ito web">
     </a-entity>
 
@@ -209,48 +194,51 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
     <a-entity position="0.9 0.38 0.8" text="width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: contact" rotation="0 -80 0">
     </a-entity>
 
+
     
     <!-- ここから5つのメニュー -->
 
-    <a-entity id="Sphere_center" geometry="primitive:sphere" href="http://arisa-ito.wixsite.com/arisaito" material="color:#ffffff;roughness:0;emissive:#000000" position="0 0.5 -4">
-    </a-entity>
+    <a-sphere id="center" material="color:#ffffff;roughness:0;emissive:#000000" position="0 0.5 -4">
+    </a-sphere>
 
     
-    <a-entity id="Sphere_right1" geometry="primitive:icosahedron" material="color:#c4eada;roughness:0;emissive:#000000" position="3.5 0.5 -3" rotation="0 240.03700000000003 0">
+    <a-icosahedron id="right1" material="color:#c4eada;roughness:0;emissive:#000000" position="3.5 0.5 -3" rotation="0 240.03700000000003 0">
 
     	<a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000">
     	</a-animation>
 
-  	</a-entity>
+  	</a-icosahedron>
       
 
-     <a-entity id="Sphere_left1" geometry="primitive:octahedron" href="http://arisa-ito.wixsite.com/arisaito/woks" material="color:#fcf3ca;roughness:0;emissive:#000000" position="-3.5 0.5 -3" rotation="0 240.03700000000003 0">
+     <a-octahedron id="left1" data-link="http://arisa-ito.wixsite.com/arisaito/woks" material="color:#fcf3ca;roughness:0;emissive:#000000" position="-3.5 0.5 -3" rotation="0 240.03700000000003 0">
       	
     	<a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000" direction="reverse">
     		
     	</a-animation>
 
-    </a-entity>
+    </a-octahedron>
 
 
-    <a-entity id="Sphere_left2" geometry="primitive:icosahedron" material="color:#ef7b7b;roughness:0;emissive:#000000" position="-5.5 0.5 -0.3" rotation="0 240.03700000000003 0">
+    <a-icosahedron id="left2" material="color:#ef7b7b;roughness:0;emissive:#000000" position="-5.5 0.5 -0.3" rotation="0 240.03700000000003 0">
       	
     	<a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000">
     	</a-animation>
 
-    </a-entity>
+    </a-icosahedron>
 
-    <a-entity id="Sphere_right2" geometry="primitive:octahedron" material="color:#919190;roughness:0;emissive:#000000" position="5.5 0.5 -0.3" rotation="0 240.03700000000003 0">
-      	
+
+    <a-octahedron id="right2" material="color:#919190;roughness:0;emissive:#000000" position="5.5 0.5 -0.3" rotation="0 240.03700000000003 0">
+      	s
       	<a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000" direction="reverse">
       	</a-animation>
 
-    </a-entity>
+    </a-octahedron>
 
 
 
     <!-- JS読んでいます -->
     <script src="./cursor.js"></script>
+
 
 
   </body>

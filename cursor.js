@@ -23,7 +23,7 @@
   document.querySelector('#right1').addEventListener('click', function (evt) {
     start = true;
     if (start) {
-      location.href = "https://arisaito.github.io/web/";
+      location.href = "http://arisa-ito.wixsite.com/arisaito/products";
     }
   });
 

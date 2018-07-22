@@ -13,12 +13,7 @@
 
   let strat = false;
 
-  document.querySelector('#center').addEventListener('click', function (evt) {
-    start = true;
-    if (start) {
-      location.href = "https://arisaito.github.io/web/";
-    }
-  });
+ 
 
   document.querySelector('#right1').addEventListener('click', function (evt) {
     start = true;

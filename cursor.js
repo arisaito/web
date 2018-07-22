@@ -41,3 +41,10 @@
       location.href = "http://arisa-ito.wixsite.com/arisaito/biography";
     }
   });
+
+  document.querySelector('#center').addEventListener('click', function (evt) {
+    start = true;
+    if (start) {
+      location.href = "http://arisa-ito.wixsite.com/arisaito";
+    }
+  });

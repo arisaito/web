@@ -25,7 +25,7 @@ let strat = false;
   document.querySelector('#left2').addEventListener('click', function (evt) {
     start = true;
     if (start) {
-      location.href = "http://arisa-ito.wixsite.com/arisaito/biography";
+      location.href = "https://arisaito.github.io/web/biography";
     }
   });
 

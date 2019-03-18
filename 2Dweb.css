@@ -6,7 +6,9 @@ html {
 .content {
   width: 700px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #7c7575;
 }
 
 @media screen and (max-width: 700px) {
@@ -19,6 +21,11 @@ html {
 * {
   font-size: 1rem;
 }
+
+a {
+  color: #7c7575;
+  text-decoration:underline;
+  }
 
 h1,
 h2 {

@@ -1,36 +1,36 @@
 let strat = false;
 
-document.querySelector("#right1").addEventListener("click", function(evt) {
+document.querySelector("#right1").addEventListener("click", function (evt) {
   start = true;
   if (start) {
-    location.href = "http://arisa-ito.wixsite.com/arisaito/products";
+    location.href = "https://suzuri.jp/saharu54";
   }
 });
 
-document.querySelector("#left1").addEventListener("click", function(evt) {
+document.querySelector("#left1").addEventListener("click", function (evt) {
   start = true;
   if (start) {
-    location.href = "http://arisa-ito.wixsite.com/arisaito/woks";
+    location.href = "http://arisa-ito.tumblr.com/";
   }
 });
 
-document.querySelector("#right2").addEventListener("click", function(evt) {
+document.querySelector("#right2").addEventListener("click", function (evt) {
   start = true;
   if (start) {
     location.href = "http://twitter.com/saharu54";
   }
 });
 
-document.querySelector("#left2").addEventListener("click", function(evt) {
+document.querySelector("#left2").addEventListener("click", function (evt) {
   start = true;
   if (start) {
-    location.href = "https://arisaito.github.io/web/biography";
+    location.href = "biography.html";
   }
 });
 
-document.querySelector("#center").addEventListener("click", function(evt) {
+document.querySelector("#center").addEventListener("click", function (evt) {
   start = true;
   if (start) {
-    location.href = "http://arisa-ito.wixsite.com/arisaito";
+    location.href = "2Dweb.html";
   }
 });

@@ -39,3 +39,7 @@ ul {
 li {
   list-style-type: none;
 }
+
+.fa-twitter {
+  font-size: 16px;
+}

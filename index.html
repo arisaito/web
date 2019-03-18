@@ -170,6 +170,7 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
     </a-camera>
 
     <!-- sky -->
+    <a-sky color="#fcf7f7"></a-sky>
 
     <!-- text -->
     <a-entity position="0.330 0.021 -0.611" " text=" width: 1; lineHeight: 20; letterSpacing: 5; color: #7c7575; value:
@@ -236,9 +237,10 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
       <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
     </a-octahedron>
 
-    <a-entity id="mone" obj-model="obj:#mone-obj; mtl:#mone-mtl;" position="0 -1 9.046" scale="1 1 1" rotation="0 90 0"></a-entity>
-
-    <a-circle position="0, 0, 40" rotation="0 180 180" color="dfd3d3" radius="20"></a-circle>
+    <a-entity id="mone" obj-model="obj:#mone-obj; mtl:#mone-mtl;" position="0 -2 9.046" scale="1 1 1" rotation="0 90 0">
+      <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
+      <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
+    </a-entity>
 
     <!-- cursor.js -->
     <script src="cursor.js"></script>

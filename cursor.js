@@ -34,3 +34,10 @@ document.querySelector("#center").addEventListener("click", function (evt) {
     location.href = "2Dweb.html";
   }
 });
+
+document.querySelector("#mone").addEventListener("click", function (evt) {
+  start = true;
+  if (start) {
+    location.href = "https://www.youtube.com/channel/UCa8BbMJG9dQrdocBNMNRyjw";
+  }
+});

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Arisa Ito Web</title>
-    <!-- aframe library -->
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <!-- guraddation sky -->
-    <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
-  </head>
-  <body>
 
-<!-- 
+<head>
+  <meta charset="utf-8" />
+  <title>Arisa Ito Web</title>
+  <!-- aframe library -->
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <!-- guraddation sky -->
+  <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+
+  <!-- 
 ====================================??=111<<<<<<<+1=================================================
 ?=?=?=?=?=?=?=?=?=?==?==?1+<<<<<~~~~_______.__::;::____<<<<+1??==?==?==?==?=?=?=?=?=?=?=?=?=?=?=?=?=
 ===?=====?===?====1<<<<:_--__~<<<~~~~~_~~~~~~_~<<<;;>><;<;;;;;<<::<<<<+1=======?===?===?===?===?===?
@@ -151,76 +153,86 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
  -->
 
 
-    
-
-    <a-scene>
-      <!-- cursor -->
-      <a-camera wasd-controls-enabled="false" position="0 0 0">
-        <a-entity cursor="fuse: true; fuseTimeout: 1500" position="0 0 -1" geometry="primitive: ring" scale="0.03 0.03 0.03" material="color: gray; shader: flat">
-          </a-animation>
-        </a-entity>
-      </a-camera>
-
-      <!-- sky -->
-      
-      <!-- text -->
-      <a-entity position="0.67 0.2 -0.8" shader: msdf; font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/Roboto/Regular.json;" text="width: 2; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: Arisa Ito web">
-      </a-entity>
-
-      <a-entity position="0.7 -0.3 -2" text="width: 2; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: 2D web here">
-      </a-entity>
-
-      <a-entity position="0.920 0.026 -0.439" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: products" rotation="0 -50 0">
-      </a-entity>
-
-      <a-entity position="-0.412 0.026 -1.002" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: artwork" rotation="0 40 0">
-      </a-entity>
-
-      <a-entity position="0.385 0.569 -0.607" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: biography" rotation="0 0 0">
-      </a-entity>
-
-      <a-entity position="0.424 -0.540 -0.607" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: twitter" rotation="0 0 0">
-      </a-entity>
-
-      <!-- objects -->
-      <a-sphere id="center" material="color:#7c7575;roughness:0;emissive:#000000" position="0 -1.5 -10" rotation="0 0 0" geometry="">
-        <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="2 2 2"></a-animation>
-        <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
-      </a-sphere>
 
 
-      <a-icosahedron id="right1" material="color:#99ddcc;roughness:0;emissive:#000000" position="3, 0, -3" rotation="0 240.03700000000003 0">
-        <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
-        <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
-    	  <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000">
-    	  </a-animation>
-  	  </a-icosahedron>
-      
-
-      <a-octahedron id="left1" material="color:#f6f6f6;roughness:0;emissive:#000000" position="-3, 0, -3" rotation="0 240.03700000000003 0">
-        <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
-        <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
-    	  <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000" direction="reverse">
-    	  </a-animation>
-      </a-octahedron>
-
-
-      <a-icosahedron id="left2" material="color:#ffe2e2;roughness:0;emissive:#000000" position="0, 3, -3" rotation="0 240.03700000000003 0">
-    	  <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000">
-      	</a-animation>
-        <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
-        <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
-      </a-icosahedron>
-
-
-      <a-octahedron id="right2" material="color:#bad7df;roughness:0;emissive:#000000" position="0, -3, -3" rotation="0 240.03700000000003 0">
-        <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000" direction="reverse">
+  <a-scene>
+    <!-- cursor -->
+    <a-camera wasd-controls-enabled="false" position="0 0 0">
+      <a-entity cursor="fuse: true; fuseTimeout: 1500" position="0 0 -1" geometry="primitive: ring" scale="0.03 0.03 0.03"
+        material="color: gray; shader: flat">
         </a-animation>
-        <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
-        <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
-      </a-octahedron>
+      </a-entity>
+    </a-camera>
+
+    <!-- sky -->
+
+    <!-- text -->
+    <a-entity position="0.670 0.130 -0.800" " text=" width: 2; lineHeight: 50; letterSpacing: 5; color: #7c7575; value:
+      Arisa Ito web; ">
+      </a-entity>
+
+      <a-entity position=" 0.7 -0.3 -2" text="width: 2; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: 2D web here">
+    </a-entity>
+
+    <a-entity position="0.920 0.026 -0.439" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: products"
+      rotation="0 -50 0">
+    </a-entity>
+
+    <a-entity position="-0.412 0.026 -1.002" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: artwork"
+      rotation="0 40 0">
+    </a-entity>
+
+    <a-entity position="0.385 0.569 -0.607" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: biography"
+      rotation="0 0 0">
+    </a-entity>
+
+    <a-entity position="0.424 -0.540 -0.607" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: twitter"
+      rotation="0 0 0">
+    </a-entity>
+
+    <!-- objects -->
+    <a-sphere id="center" material="color:#7c7575;roughness:0;emissive:#000000" position="0 -1.5 -10" rotation="0 0 0"
+      geometry="">
+      <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="2 2 2"></a-animation>
+      <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
+    </a-sphere>
+
+
+    <a-icosahedron id="right1" material="color:#99ddcc;roughness:0;emissive:#000000" position="3, 0, -3" rotation="0 240.03700000000003 0">
+      <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
+      <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
+      <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000">
+      </a-animation>
+    </a-icosahedron>
+
+
+    <a-octahedron id="left1" material="color:#f6f6f6;roughness:0;emissive:#000000" position="-3, 0, -3" rotation="0 240.03700000000003 0">
+      <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
+      <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
+      <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000"
+        direction="reverse">
+      </a-animation>
+    </a-octahedron>
+
+
+    <a-icosahedron id="left2" material="color:#ffe2e2;roughness:0;emissive:#000000" position="0, 3, -3" rotation="0 240.03700000000003 0">
+      <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000">
+      </a-animation>
+      <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
+      <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
+    </a-icosahedron>
+
+
+    <a-octahedron id="right2" material="color:#bad7df;roughness:0;emissive:#000000" position="0, -3, -3" rotation="0 240.03700000000003 0">
+      <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000"
+        direction="reverse">
+      </a-animation>
+      <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
+      <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
+    </a-octahedron>
 
     <!-- cursor.js -->
     <script src="cursor.js"></script>
-  </body>
+</body>
+
 </html>

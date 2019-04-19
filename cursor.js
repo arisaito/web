@@ -24,14 +24,14 @@ document.querySelector("#right2").addEventListener("click", function (evt) {
 document.querySelector("#left2").addEventListener("click", function (evt) {
   start = true;
   if (start) {
-    location.href = "biography.html";
+    location.href = "2D/biography.html";
   }
 });
 
 document.querySelector("#center").addEventListener("click", function (evt) {
   start = true;
   if (start) {
-    location.href = "2Dweb.html";
+    location.href = "2D/2Dweb.html";
   }
 });
 

@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  color: #fff;
+  height: 100vh;
+  padding: 40px;
+}
+.box1 {
+  background: #f5fff5;
+}
+.box2 {
+  background: #e6f0e6;
+}
+.box3 {
+  background: #f5fff5;
+}
+.box4 {
+  background: #e6f0e6;
+}

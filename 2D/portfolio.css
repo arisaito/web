@@ -47,6 +47,13 @@ h2 .tate-title {
   right: 0;
 }
 
+.prop-pos {
+  position: absolute;
+  bottom:2%;
+  left: 1%;
+}
+
+
 img .art {
   display: inline-block;
   border: 0;
@@ -57,12 +64,13 @@ img .art {
 }
 
 img .text {
+  width: 50%;
   z-index: 10;
 }
 
+
 @media screen and (max-width: 499px) {
   /*　画面サイズ 499pxまで適用　*/
-  h2 {
-    font-size: 2.7em;
+  img .text {
     }
 }

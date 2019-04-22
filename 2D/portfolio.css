@@ -16,7 +16,7 @@ h2 .tate-title {
   padding: 40px;
 }
 .box1 {
-  background: #E6F0E6;
+  background: #ffffff;
 }
 .box2 {
   background: #3D403D;
@@ -41,15 +41,23 @@ h2 .tate-title {
   transform: translateY(-50%);
 }
 
+.text-pos {
+  text-align: right;
+}
 
-
-img {
+    
+img .art {
   display: inline-block;
   border: 0;
   max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
+
+img .text {
+  padding-left: 10%%;
+}
+
 
 @media screen and (max-width: 499px) {
   /*　画面サイズ 499pxまで適用　*/

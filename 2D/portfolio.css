@@ -64,7 +64,6 @@ img .art {
 }
 
 img .text {
-  width: 50%;
   z-index: 10;
 }
 
@@ -72,5 +71,7 @@ img .text {
 @media screen and (max-width: 499px) {
   /*　画面サイズ 499pxまで適用　*/
   img .text {
+    min-width: 40px;
+    min-height: auto;
     }
 }

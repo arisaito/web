@@ -8,7 +8,7 @@
   <link href="portfolio.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
   <script src="portfolio.js"></script>
   <script>
@@ -45,12 +45,45 @@
       <img class="text" src="pf_text/text_brain.png" width=50% height=auto>
     </div>
     <div class="img-pos">
-      <img class="art" src="pf_img/brain.gif" width=60% height=auto>
+      <img class="art" id="openModal2" src="pf_img/brain.gif" width=60% height=auto>
     </div>
     <div class="prop-pos">
       <img class="text" src="pf_text/concept_develop.png" width=50% height=auto>
     </div>
   </div>
+
+  <!-- modal start -->
+  <section id="modalArea" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <h1>Brain in a vat</h1>
+        <h2>2019</h2>
+        <h2>VR game by Unity(C#)</h2>
+        <hr>
+        <hr>
+        <p>SNSのサブアカや仮想現実（VR）などを使い分けて、わたしたちの人格や肉体は複数に増えていく。</p>
+        <p>でもそんな世界でわたしたちのアイデンティティがどうなっていくかは誰も知らない。</p>
+        <hr>
+        <p>水槽の脳の思考実験</p>
+        <p>
+          <font color="grey">【いまわたしが生きていると思っている現実は、 実は培養液の水槽で脳が見ている仮想現実。視覚や触覚、感じる刺激は全て繋がれたコンピューターから流れてくる人工的な刺激にすぎない】</font>
+        </p>
+        <hr>
+        <p>この思考実験の「仮想現実と現実をひっくり返したVRゲーム」の中で、あなたは自分自身の在りかを探す。</p>
+        <hr>
+        <p>突然、自分の実態が肉体を持たない脳だと知った時、自分というアイデンティティはどこに帰るのか？</p>
+        <p>連続性のある、肉体を持って数十年生きてきた「自分」だろうか？</p>
+        <p>例えそれが仮に「仮想現実」であったとしても？</p>
+        <hr>
+        <p>なに、ただのVRゲームだ </p>
+      </div>
+      <div id="closeModal" class="closeModal">
+        ×
+      </div>
+    </div>
+  </section>
+  <!-- modal end -->
 
   <!--box3 VRT#1-->
   <div class="box box3">
@@ -92,10 +125,9 @@
   </div>
 
   <!--box6 その他のページ-->
-  <div class="box box1">
+  <div class="box box6">
 
   </div>
-
 </body>
 
 </html>

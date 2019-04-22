@@ -1,8 +1,20 @@
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  color: #131313;
 }
 
-h2 .tate-title {
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 0.9em;
+}
+hr {
+  border: 5px solid transparent;
 }
 
 * {
@@ -10,6 +22,7 @@ h2 .tate-title {
   margin: 0;
   padding: 0;
 }
+
 .box {
   color: #fff;
   height: 100vh;
@@ -20,16 +33,19 @@ h2 .tate-title {
   background: #fff;
 }
 .box2 {
-  background: #E1E5E8;
+  background: #49A67D;
 }
 .box3 {
-  background: #C9D1D4;
+  background: #FEE981;
 }
 .box4 {
-  background: #B3BAC2;
+  background: #F8D1E2;
 }
 .box5 {
-  background: #9EA9AF;
+  background: #92EBEE;
+}
+.box6 {
+  background: #ffffff; 
 }
 
 .img-pos {
@@ -67,8 +83,48 @@ img .text {
   z-index: 10;
 }
 
-
 @media screen and (max-width: 499px) {
   /*　画面サイズ 499pxまで適用　*/
-  
+  .prop-pos {
+    left: 2%;
+  }
+  img .text {
+    max-width: 30px;
+  }
+}
+
+/* modal css */
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10; /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 70%;
+  max-width: 800px;
+  padding: 30px 50px 30px 50px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
 }

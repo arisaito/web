@@ -1,3 +1,10 @@
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+h2 .tate-title {
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,14 +16,45 @@
   padding: 40px;
 }
 .box1 {
-  background: #f5fff5;
+  background: #E6F0E6;
 }
 .box2 {
-  background: #e6f0e6;
+  background: #3D403D;
 }
 .box3 {
-  background: #f5fff5;
+  background: #F5FFF5;
 }
+
 .box4 {
-  background: #e6f0e6;
+  background: #7A807A;
+}
+
+.box5 {
+  background: #B8BFB8;
+}
+
+.img-pos {
+  text-align: center;
+}
+
+.imgcover {
+  position: absolute;
+  bottom: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom;
+  object-position: bottom;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+}
+
+img {
+  display: inline-block;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }

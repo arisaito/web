@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>portfolio2019</title>
-    <link href="portfolio.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
-    <script>
-      $(function() {
-        $.scrollify({ section: ".box" });
-        console.log("in");
-        $(window).on("resize", function() {
-          $.scrollify.update();
-          console.log("in");
-        });
-      });
-    </script>
-  </head>
 
-  <body>
-    <div class="box box1">
-      <h2>box1</h2>
+<head>
+  <meta charset="UTF-8" />
+  <title>portfolio2019</title>
+  <link href="portfolio.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+  <script>
+    $(function () {
+      $.scrollify({ section: ".box" });
+      console.log("in");
+      $(window).on("resize", function () {
+        $.scrollify.update();
+        console.log("in");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!--box-->
+  <div class="box box1">
+    <h2 class="tate-title">Arisa Ito</h2>
+    <div class="img-pos">
+      <img src="pf_img/img1.jpg">
     </div>
-    <!--box-->
-    <div class="box box2">
-      <h2>box2</h2>
+  </div>
+
+  <div class="box box2">
+    <h2>Brain in a vat</h2>
+    <div class="img-pos">
+      <img src="pf_img/img1.jpg">
     </div>
-    <!--box-->
-    <div class="box box3">
-      <h2>box3</h2>
+  </div>
+
+  <div class="box box3">
+    <h2>VRT#1</h2>
+    <div class="img-pos">
+      <img src="pf_img/img1.jpg">
     </div>
-    <!--box-->
-    <div class="box box4">
-      <h2>box4</h2>
+  </div>
+
+  <div class="box box4">
+    <h2>tanoshii-webyasan</h2>
+    <div class="img-pos">
+      <img src="pf_img/img1.jpg">
     </div>
-    <!--box-->
-  </body>
+  </div>
+
+  <div class="box box5">
+    <h2>box5</h2>
+    <div class="img-pos">
+      <img src="pf_img/img1.jpg">
+    </div>
+  </div>
+</body>
+
 </html>

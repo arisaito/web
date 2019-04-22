@@ -14,50 +14,51 @@ h2 .tate-title {
   color: #fff;
   height: 100vh;
   padding: 40px;
+  position: relative;
 }
 .box1 {
   background: #fff;
 }
 .box2 {
-  background: #dee;
+  background: #E1E5E8;
 }
 .box3 {
-  background: #dde;
+  background: #C9D1D4;
 }
-
 .box4 {
-  background: #ede;
+  background: #B3BAC2;
 }
-
 .box5 {
-  background: #edd;
+  background: #9EA9AF;
 }
 
 .img-pos {
-  text-align: center;
   position: relative;
+  text-align: center;
   top: 50%;
   -webkit-transform: translateY(-50%); /* Safari用 */
   transform: translateY(-50%);
+  z-index: 0;
 }
 
 .text-pos {
-  text-align: right;
+  position: absolute;
+  top:2%;
+  right: 0;
 }
 
-    
 img .art {
   display: inline-block;
   border: 0;
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+  z-index: 1;
 }
 
 img .text {
-  padding-left: 10%%;
+  z-index: 10;
 }
-
 
 @media screen and (max-width: 499px) {
   /*　画面サイズ 499pxまで適用　*/

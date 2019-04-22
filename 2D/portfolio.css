@@ -83,16 +83,6 @@ img .text {
   z-index: 10;
 }
 
-@media screen and (max-width: 499px) {
-  /*　画面サイズ 499pxまで適用　*/
-  .prop-pos {
-    left: 2%;
-  }
-  img .text {
-    max-width: 30px;
-  }
-}
-
 /* modal css */
 .modalArea {
   display: none;
@@ -117,9 +107,11 @@ img .text {
   transform:translate(-50%,-50%);
   width: 70%;
   max-width: 800px;
+  max-height: 500px;
   padding: 30px 50px 30px 50px;
   background-color: #fff;
   border-radius: 10px;
+  overflow : scroll; //状況に応じて縦スクロールバーが出現
 }
 
 .closeModal {
@@ -127,4 +119,20 @@ img .text {
   top: 0.5rem;
   right: 1rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 499px) {
+  /*　画面サイズ 499pxまで適用　*/
+  .prop-pos {
+    left: 2%;
+  }
+
+  img .text {
+    max-width: 30px;
+  }
+
+  .modalWrapper {
+    max-width: 800px;
+    max-height: 400px;
+  }
 }

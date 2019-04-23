@@ -166,14 +166,4 @@ a {
     max-height: 400px;
     padding: 30px;
   }
-
-  .modalArea {
-    position: fixed;
-    overflow: hidden;
-  }
-
-  .closeModal {
-    position: static;
-    overflow: auto;
-  }
 }

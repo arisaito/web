@@ -1,3 +1,7 @@
+var movefun = function (event) {
+    event.preventDefault();
+}
+
 $(function () {
     $.scrollify({
         section: ".box",
@@ -9,10 +13,12 @@ $(function () {
     $('#openModal1').click(function () {
         $('#modalArea1').fadeIn()
         $.scrollify.disable()
+        window.addEventListener('touchmove', movefun, { passive: false })
     })
     $('#closeModal1, #modalBg1').click(function () {
         $('#modalArea1').fadeOut()
         $.scrollify.enable()
+        window.removeEventListener('touchmove', movefun, { passive: false })
     })
     $('#openModal2').click(function () {
         $('#modalArea2').fadeIn()

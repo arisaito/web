@@ -163,6 +163,7 @@ a {
 
   .modalWrapper {
     min-width: 350px;
+    height: auto;
     max-height: 400px;
     padding: 30px;
   }

@@ -47,7 +47,7 @@ a {
   background: #F8D1E2;
 }
 .box5 {
-  background: #92EBEE;
+  background: #6DFAF5;
 }
 .box6 {
   background: #ffffff; 
@@ -75,17 +75,19 @@ a {
 }
 
 
-img .art {
+.art {
   display: inline-block;
   border: 0;
-  max-width: 100%;
+  width: 50%;
   height: auto;
   vertical-align: middle;
   z-index: 1;
 }
 
-img .text {
+.text {
   z-index: 10;
+  width: 50%;
+  height: auto;
 }
 
 /* modal css */
@@ -113,7 +115,7 @@ img .text {
   width: 70%;
   max-width: 800px;
   max-height: 500px;
-  padding: 30px 50px 30px 50px;
+  padding: 40px 50px 40px 50px;
   background-color: #fff;
   border-radius: 10px;
   overflow : auto; //状況に応じて縦スクロールバーが出現

@@ -1,51 +1,57 @@
 $(function () {
+    $.scrollify({
+        section: ".box",
+        scrollSpeed: 600,
+    })
+    $(window).on("resize", function () {
+        $.scrollify.update()
+    })
     $('#openModal1').click(function () {
-        $('#modalArea1').fadeIn();
-        $(function scrollFixed() {
-            $('body').css({
-                position: 'fixed',
-                width: '100%'
-            });
-        });
-    });
+        $('#modalArea1').fadeIn()
+        $.scrollify.disable()
+    })
     $('#closeModal1, #modalBg1').click(function () {
-        $('#modalArea1').fadeOut();
-    });
-});
-
-$(function () {
+        $('#modalArea1').fadeOut()
+        $.scrollify.enable()
+    })
     $('#openModal2').click(function () {
-        $('#modalArea2').fadeIn();
-    });
+        $('#modalArea2').fadeIn()
+        $.scrollify.disable()
+    })
     $('#closeModal2, #modalBg2').click(function () {
-        $('#modalArea2').fadeOut();
-    });
-});
-
-
-$(function () {
+        $('#modalArea2').fadeOut()
+        $.scrollify.enable()
+    })
     $('#openModal3').click(function () {
-        $('#modalArea3').fadeIn();
-    });
+        $('#modalArea3').fadeIn()
+        $.scrollify.disable()
+    })
     $('#closeModal3, #modalBg3').click(function () {
-        $('#modalArea3').fadeOut();
-    });
-});
-
-$(function () {
+        $('#modalArea3').fadeOut()
+        $.scrollify.enable()
+    })
     $('#openModal4').click(function () {
-        $('#modalArea4').fadeIn();
-    });
+        $('#modalArea4').fadeIn()
+        $.scrollify.disable()
+    })
     $('#closeModal4, #modalBg4').click(function () {
-        $('#modalArea4').fadeOut();
-    });
-});
-
-$(function () {
+        $('#modalArea4').fadeOut()
+        $.scrollify.enable()
+    })
     $('#openModal5').click(function () {
-        $('#modalArea5').fadeIn();
-    });
+        $('#modalArea5').fadeIn()
+        $.scrollify.disable()
+    })
     $('#closeModal5, #modalBg5').click(function () {
-        $('#modalArea5').fadeOut();
-    });
-});
+        $.scrollify.enable()
+        $('#modalArea5').fadeOut()
+    })
+    $('#openModal6').click(function () {
+        $('#modalArea6').fadeIn()
+        $.scrollify.disable()
+    })
+    $('#closeModal6, #modalBg6').click(function () {
+        $('#modalArea6').fadeOut()
+        $.scrollify.enable()
+    })
+})

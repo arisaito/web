@@ -1,7 +1,7 @@
 $(function () {
     $.scrollify({
         section: ".box",
-        scrollSpeed: 600,
+        scrollSpeed: 800,
     })
     $(window).on("resize", function () {
         $.scrollify.update()

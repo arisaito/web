@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>portfolio2019</title>
   <link href="portfolio.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
@@ -26,18 +25,55 @@
 <body>
   <!--box1 arisaito-->
   <div class="box box1">
-    <!-- 
-      <div class="img-pos">
-      <img src="pf_img/img1.jpg">
-      </div>
-    -->
     <div class="text-pos">
       <img class="text" src="pf_text/text_arisaito.png" width=50% height=auto>
+    </div>
+    <div class="img-pos">
+      <img class="art" id="openModal1" src="pf_img/profile.jpg" width=40% height=auto>
     </div>
     <div class="prop-pos">
       <img class="text" src="pf_text/text_arisaito.png" width=50% height=auto>
     </div>
   </div>
+
+  <!-- modal start -->
+  <section id="modalArea1" class="modalArea">
+    <div id="modalBg1" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <h1>Arisa Ito/ダミアン伊藤
+        </h1>
+        <h2>1993-</h2>
+        <h2>Planner, Designer, Developer, Media Artist</h2>
+        <hr>
+        <hr>
+        <p>1993 愛知県生まれ</p>
+        <p>2014 イギリス ロンドン Goldsmiths校 BA Fine Art Extension course修了</p>
+        <hr>
+        <p>2017 株式会社DWE 映画宣伝配給/興業部</p>
+        <p>
+          <font color="grey">配給宣伝業務、SNS担当、実店舗（映画館）立ち上げ、アルバイト採用・研修、内装工事</font>
+        </p>
+        <p>2018 dely株式会社 新規事業部（仮想通貨/ブロックチェーン部）</p>
+        <p>
+          <font color="grey">ウェブメディアのSEO、インターンのマネジメント、UnityでのVR開発、VRワールドデザインなど</font>
+        </p>
+        <p>2018 株式会社MESON</p>
+        <p>
+          <font color="grey">AR領域の企画、ディレクション、アートディレクションを経験</font>
+        </p>
+        <hr>
+
+        <p>メディアアーティストとして精力的に作品制作、展示も行う</p>
+      </div>
+      <div id="closeModal1" class="closeModal">
+        ×
+      </div>
+    </div>
+  </section>
+  <!-- modal end -->
+
+
 
   <!--box2 brain in a vat-->
   <div class="box box2">
@@ -53,8 +89,8 @@
   </div>
 
   <!-- modal start -->
-  <section id="modalArea" class="modalArea">
-    <div id="modalBg" class="modalBg"></div>
+  <section id="modalArea2" class="modalArea">
+    <div id="modalBg2" class="modalBg"></div>
     <div class="modalWrapper">
       <div class="modalContents">
         <h1>Brain in a vat</h1>
@@ -78,7 +114,7 @@
         <hr>
         <p>なに、ただのVRゲームだ </p>
       </div>
-      <div id="closeModal" class="closeModal">
+      <div id="closeModal2" class="closeModal">
         ×
       </div>
     </div>
@@ -91,12 +127,36 @@
       <img class="text" src="pf_text/text_vrt.png" width=50% height=auto>
     </div>
     <div class="img-pos">
-      <img class="art" src="pf_img/vrt.PNG" width="45%" height=auto>
+      <img class="art" id="openModal3" src="pf_img/vrt.PNG" width="45%" height=auto>
     </div>
     <div class="prop-pos">
       <img class="text" src="pf_text/concept_develop_design.png" width=50% height=auto>
     </div>
   </div>
+
+  <!-- modal start -->
+  <section id="modalArea3" class="modalArea">
+    <div id="modalBg3" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="pf_img/sub/vrt_sub1.png" width=100% height=auto>
+        <h1>VRT#1</h1>
+        <h2>2019</h2>
+        <h2>webVR by aframe(html, css, JavaScript)</h2>
+        <hr>
+        <hr>
+        <p>VRT#1は「#すこしだけ世界を味方にする服」というコンセプトの【遊べるアパレル】です。</p>
+        <p>アパレルにデザインされたQRコードをスマホで読み取るとwebVRのゲームで遊べて、服を着た人と出会った人のコミュニケーションを加速させます。</p>
+        <hr>
+        <p><a link href="https://note.mu/arisaito/n/na02a45eb305f">concept note</a></p>
+      </div>
+      <div id="closeModal3" class="closeModal">
+        ×
+      </div>
+    </div>
+  </section>
+  <!-- modal end -->
+
 
   <!--box4 たのしいweb屋さん-->
   <div class="box box4">
@@ -104,12 +164,36 @@
       <img class="text" src="pf_text/text_webya.png" width=50% height=auto>
     </div>
     <div class="img-pos">
-      <img class="art" src="pf_img/webya.png" width="50%" height=auto>
+      <img class="art" id="openModal4" src="pf_img/webya.png" width="50%" height=auto>
     </div>
     <div class="prop-pos">
       <img class="text" src="pf_text/concept_develop_design.png" width=50% height=auto>
     </div>
   </div>
+
+  <!-- modal start -->
+  <section id="modalArea4" class="modalArea">
+    <div id="modalBg4" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="pf_img/sub/vrt_sub1.png" width=100% height=auto>
+        <h1>VRT#1</h1>
+        <h2>2019</h2>
+        <h2>webVR by aframe(html, css, JavaScript)</h2>
+        <hr>
+        <hr>
+        <p>VRT#1は「#すこしだけ世界を味方にする服」というコンセプトの【遊べるアパレル】です。</p>
+        <p>アパレルにデザインされたQRコードをスマホで読み取るとwebVRのゲームで遊べて、服を着た人と出会った人のコミュニケーションを加速させます。</p>
+        <hr>
+        <p><a link href="https://note.mu/arisaito/n/na02a45eb305f">concept note</a></p>
+      </div>
+      <div id="closeModal4" class="closeModal">
+        ×
+      </div>
+    </div>
+  </section>
+  <!-- modal end -->
+
 
   <!--box5 概念メルカリ-->
   <div class="box box5">
@@ -117,12 +201,32 @@
       <img class="text" src="pf_text/text_gainen.png" width=50% height=auto>
     </div>
     <div class="img-pos">
-      <img class="art" src="pf_img/gainen.png" width="45%" height=auto>
+      <img class="art" id="openModal5" src="pf_img/gainen.png" width="45%" height=auto>
     </div>
     <div class="prop-pos">
       <img class="text" src="pf_text/concept.png" width=50% height=auto>
     </div>
   </div>
+
+  <!-- modal start -->
+  <section id="modalArea5" class="modalArea">
+    <div id="modalBg5" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <center><iframe src="https://player.vimeo.com/video/331964261" height="400px" width=auto frameborder="0" allow="autoplay; fullscreen"
+            allowfullscreen></iframe>
+          <p><a href="https://vimeo.com/331964261">gainen mercari</a> from <a href="https://vimeo.com/arisaito">Arisa
+              Ito</a>
+            on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </center>
+      </div>
+      <div id="closeModal5" class="closeModal">
+        ×
+      </div>
+    </div>
+  </section>
+  <!-- modal end -->
+
 
   <!--box6 その他のページ-->
   <div class="box box6">

@@ -1,6 +1,7 @@
 body {
   font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
   color: #131313;
+  overflow: hidden;
 }
 
 h1 {
@@ -21,6 +22,10 @@ hr {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: #131313;
 }
 
 .box {
@@ -111,7 +116,7 @@ img .text {
   padding: 30px 50px 30px 50px;
   background-color: #fff;
   border-radius: 10px;
-  overflow : scroll; //状況に応じて縦スクロールバーが出現
+  overflow : auto; //状況に応じて縦スクロールバーが出現
 }
 
 .closeModal {
@@ -123,6 +128,18 @@ img .text {
 
 @media screen and (max-width: 499px) {
   /*　画面サイズ 499pxまで適用　*/
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2{
+   font-size: 0.5em; 
+  }
+
+  p{
+    font-size: 0.7em;
+  }
+
   .prop-pos {
     left: 2%;
   }
@@ -132,7 +149,8 @@ img .text {
   }
 
   .modalWrapper {
-    max-width: 800px;
+    min-width: 350px;
     max-height: 400px;
+    padding: 30px;
   }
 }

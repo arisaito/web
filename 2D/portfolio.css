@@ -150,8 +150,15 @@ a {
     left: 2%;
   }
 
+  .art {
+    width: 95%;
+  }
   .text {
-    max-width: 30px;
+    width: 15px;
+  }
+
+  .text-pos {
+    right: 2%;
   }
 
   .modalWrapper {

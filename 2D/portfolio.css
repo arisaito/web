@@ -131,6 +131,16 @@ a {
   height: 550px;
 }
 
+.brain-video {
+  width: 640px;
+  height: 360px;
+}
+
+.vrt-video {
+  height: 500px;
+  width: auto;
+}
+
 .mone-video {
   width: 560px; 
   height: 315px;
@@ -171,6 +181,16 @@ a {
     height: auto;
     max-height: 400px;
     padding: 30px;
+  }
+
+  .brain-video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .vrt-video {
+    height: 450px;
+    width: auto;
   }
 
   .mone-video {

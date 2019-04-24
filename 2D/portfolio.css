@@ -148,14 +148,25 @@ a {
 
 .last-page-pos {
   position: relative;
-  text-align: center;
-  bottom: 0%;
+  text-align: right;
 }
 
 .last-page-img {
   display: inline-block;
   border: 0;
   vertical-align: top;
+}
+
+#last-contact, #last-twitter, #last-web {
+  width: 25px;
+}
+
+#last-artwork {
+  width: 22px;
+}
+
+#last-arisa {
+  width: 43px;
 }
 
 @media screen and (max-width: 499px) {

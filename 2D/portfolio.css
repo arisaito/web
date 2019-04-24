@@ -146,6 +146,19 @@ a {
   height: 315px;
 }
 
+.last-page-pos {
+  position: relative;
+  text-align: center;
+  bottom: 0%;
+}
+
+.last-page-img {
+  display: inline-block;
+  border: 0;
+  vertical-align: top;
+}
+
+
 @media screen and (max-width: 499px) {
   /*　画面サイズ 499pxまで適用　*/
  

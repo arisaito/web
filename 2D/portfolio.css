@@ -158,6 +158,10 @@ a {
   vertical-align: top;
 }
 
+.mobile-last {
+  visibility: hidden;
+}
+
 
 @media screen and (max-width: 499px) {
   /*　画面サイズ 499pxまで適用　*/
@@ -210,4 +214,26 @@ a {
     width: 100%;
     height: 100%;
   }
+
+  #last-contact, #last-twitter, #last-web {
+    width: 20px;
+  }
+
+  #last-artwork {
+    width: 17px;
+  }
+
+  #last-arisa {
+    width: 33px;
+  }
+
+  /*
+  .mobile-last {
+    visibility: visible;
+  }
+
+  .last-page-pos {
+    display: none;
+  }
+  */
 }

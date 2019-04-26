@@ -1,19 +1,19 @@
 html {
   font-size: 14px;
-  font-family: 'Karla', sans-serif;
+  font-family:  'Noto Sans JP', sans-serif;
   writing-mode: vertical-rl;
 }
 
 .content {
   position: absolute;
   top: 15%;
-  right: 20%;
+  right: 13%;
   color: #7c7575;
 }
 
 p {
-  margin-block-start: 0.4em;
-  margin-block-end: 0.4em;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
 }
 
 @media screen and (max-width: 499px) {

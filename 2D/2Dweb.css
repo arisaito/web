@@ -2,6 +2,10 @@ html {
   font-size: 14px;
   font-family:  'Noto Sans JP', sans-serif;
   writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -ms-writing-mode: vertical-rl;
 }
 
 .content {

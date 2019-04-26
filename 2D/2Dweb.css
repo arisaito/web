@@ -19,6 +19,7 @@ p {
 @media screen and (max-width: 499px) {
 
   .content {
+    writing-mode: vertical-rl;
     font-size: 13px;
     position: absolute;
     top: 8%;

@@ -5,14 +5,13 @@ html {
 
 .content {
   position: absolute;
-  padding: 15% 7%;
+  padding: 7% 15%;
   color: #7c7575;
-  
 }
 
 @media screen and (max-width: 499px) {
   .content {
-  
+    padding: 10% 7%;
   }
 }
 

@@ -14,7 +14,6 @@ html {
   right: 13%;
   color: #7c7575;
 }
-
 p {
   margin-block-start: 0.3em;
   margin-block-end: 0.3em;
@@ -24,7 +23,7 @@ p {
 
   .content {
     writing-mode: vertical-rl;
-    font-size: 13px;
+    font-size: 14px;
     position: absolute;
     top: 8%;
     right: 8%;
@@ -40,8 +39,7 @@ a {
   text-decoration:underline;
   }
 
-h1,
-h2 {
+span {
   font-weight: normal;
 }
 

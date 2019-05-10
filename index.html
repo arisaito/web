@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <title>Arisa Ito Web</title>
-  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link href="src/index.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-  <script src="aframe.min.js"></script>
-  <!-- guraddation sky -->
+  <script src="src/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
   <!-- Twitter card -->
   <meta name="description" content="Arisa Ito（ダミアン伊藤） is an artist based in Tokyo" />
@@ -169,7 +168,7 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
             <h2>Release 3D world</h2>
           </center>
           <p>このページは360度見回せるwebVRのページです。</p><br>
-          <p>iOS12.2でSafariのブラウザをお使いの場合、角度センサーが初期設定でオフになっています。</p>
+          <p>iOS12.2以降でSafariのブラウザをお使いの場合、角度センサーが初期設定でオフになっています。</p>
           <p>以下の方法で設定を変更してください。</p><br>
           <p><b>「設定」＞「Safari」＞「プライバシーとセキュリティ：モーションと画面の向きのアクセス」＞オン</b></p><br>
           <p>通常の2Dウェブサイトはこちら</p>
@@ -200,29 +199,23 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
         </a-entity>
       </a-camera>
 
-      <!-- sky -->
       <a-sky color="#fcf7f7"></a-sky>
 
       <!-- text -->
       <a-entity position="0.330 0.021 -0.611" " text=" width: 1; lineHeight: 20; letterSpacing: 5; color: #7c7575;
         value: Arisa Ito web; ">
-      </a-entity>
-
+    </a-entity>
       <a-entity position=" 0.931 -0.3 -2" text="width: 2; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: 2D">
       </a-entity>
-
       <a-entity position="0.920 0.026 -0.439" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: products"
         rotation="0 -50 0">
       </a-entity>
-
       <a-entity position="-0.3 0.026 -1.002" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: art"
         rotation="0 40 0">
       </a-entity>
-
       <a-entity position="0.385 0.569 -0.607" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: biography"
         rotation="0 0 0">
       </a-entity>
-
       <a-entity position="0.424 -0.540 -0.607" text="width: 1; lineHeight: 50; letterSpacing: 5; color: #7c7575; value: twitter"
         rotation="0 0 0">
       </a-entity>
@@ -234,14 +227,12 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
         <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
       </a-sphere>
 
-
       <a-icosahedron id="right1" material="color:#99ddcc;roughness:0;emissive:#000000" position="3, 0, -3" rotation="0 240.03700000000003 0">
         <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
         <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
         <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000">
         </a-animation>
       </a-icosahedron>
-
 
       <a-octahedron id="left1" material="color:#f6f6f6;roughness:0;emissive:#000000" position="-3, 0, -3" rotation="0 240.03700000000003 0">
         <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
@@ -251,14 +242,12 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
         </a-animation>
       </a-octahedron>
 
-
       <a-icosahedron id="left2" material="color:#ffe2e2;roughness:0;emissive:#000000" position="0, 2.5, -3" rotation="0 240.03700000000003 0">
         <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000">
         </a-animation>
         <a-animation begin="mouseenter" attribute="scale" dur="1000" easing="ease-in-sine" to="1.5 1.5 1.5"></a-animation>
         <a-animation begin="mouseleave" attribute="scale" delay="50" to="1 1 1"></a-animation>
       </a-icosahedron>
-
 
       <a-octahedron id="right2" material="color:#bad7df;roughness:0;emissive:#000000" position="0, -2.5, -3" rotation="0 240.03700000000003 0">
         <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" dur="4000"
@@ -275,10 +264,9 @@ _        MMMMMMMMMMMMMMMMMMMMMMMMN  .MMN  .MMMMm,     .MMF `..    .MMMMMMMMMMMMM
     </a-scene>
   </div>
 
-  <!-- cursor.js -->
-  <script src="cursor.js"></script>
+  <script src="src/cursor.js"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+  <script src="src/index.js"></script>
 </body>
 
 </html>

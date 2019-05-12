@@ -6,7 +6,7 @@ html {
 .content {
   position: absolute;
   padding: 7% 15%;
-  color: #7c7575;
+  color: #3d3d3d;
 }
 
 @media screen and (max-width: 499px) {
@@ -20,7 +20,7 @@ html {
 }
 
 a {
-  color: #7c7575;
+  color: #3d3d3d;
   text-decoration:underline;
   }
 

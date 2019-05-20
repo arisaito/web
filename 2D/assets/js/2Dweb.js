@@ -15,8 +15,8 @@
     $.fn.glitch = function (options) {
         var s = $.extend({
             bg: null,    //背景色
-            maxint: 3,     // //グリッチ間の最大間隔
-            minint: 1,      // グリッチ間の最小間隔
+            maxint: 1,     // //グリッチ間の最大間隔
+            minint: 0.5,      // グリッチ間の最小間隔
             maxglitch: 800,   // 最大数のツイッチ
             hshift: 10,      // 最大水平シフト
             vshift: 10,      // 最大垂直シフト
@@ -26,7 +26,7 @@
         return this.each(function () {
             $t = $(this);
             $t.wrap('<div style="display:inline-block;position:relative">');
-            var $s = $t.closest('div');
+            var $s = $t.closest('div')
             var $c = $t.clone();
             var height = $t.height();
             var width = $t.width();

@@ -54,4 +54,12 @@ $(function () {
         $('#modalArea6').fadeOut()
         $.scrollify.enable()
     })
+    $('#openModal7').click(function () {
+        $('#modalArea7').fadeIn()
+        $.scrollify.disable()
+    })
+    $('#closeModal7, #modalBg7').click(function () {
+        $('#modalArea7').fadeOut()
+        $.scrollify.enable()
+    })
 })

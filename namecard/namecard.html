@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <title>namecard</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- モーダル01 -->
+      <div id="modal">
+        <div id="modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <h2>つくったひと：伊藤ダミアン</h2>
+            <div id="closeModal" class="closeModal">
+              <div class="btn">
+                <p>とじる</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a-scene vr-mode-ui="enabled:false" embedded arjs>
+        <a-assets> </a-assets>
+
+        <a-entity camera look-controls wasd-controls mouse-cursor>
+          <a-entity id="cursor" cursor="rayOrigin: mouse;"> </a-entity>
+        </a-entity>
+        <a-entity cursor-listener position="-0.5 0 -5">
+          <a-box position="0 0 0" color="skyblue"></a-box>
+        </a-entity>
+      </a-scene>
+    </div>
+  </body>
+</html>

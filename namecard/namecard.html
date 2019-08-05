@@ -6,6 +6,7 @@
       name="viewport"
       content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     <script
@@ -22,10 +23,6 @@
         <div class="modalWrapper">
           <div class="modalContents">
             <h2>つくったひと：伊藤ダミアン</h2>
-            <p>今日の神代植物公園は海の中</p>
-            <p>泡の様なシャボン玉に誘われて、</p>
-            <p>夜の植物公園に花のみたいなクラゲ</p>
-            <p>「ハナクラゲ」が満開に咲く</p>
             <div id="closeModal" class="closeModal">
               <div class="btn">
                 <p>とじる</p>
@@ -41,15 +38,10 @@
         <a-entity camera look-controls wasd-controls mouse-cursor>
           <a-entity id="cursor" cursor="rayOrigin: mouse;"> </a-entity>
         </a-entity>
-        <a-entity cursor-listener position="-0.5 0 -1.5">
-          <a-entity
-            animation="property: position; from: 0 -0.5 0; to: 0 0.5 0; dir: alternate; loop: true; easing: easeInOutCubic; dur: 4000;"
-          >
-            <a-box position="0 0 0" color="skyblue"></a-box>
-          </a-entity>
+        <a-entity cursor-listener position="-0.5 0 -5">
+          <a-box position="0 0 0" color="skyblue"></a-box>
         </a-entity>
       </a-scene>
     </div>
-    <script></script>
   </body>
 </html>

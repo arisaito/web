@@ -111,6 +111,10 @@ a {
     cursor: pointer;
 }
 
+.art:hover {
+    opacity: .9;
+}
+
 .text {
     z-index: 10;
     width: 50%;

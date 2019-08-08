@@ -5,12 +5,6 @@
  * Licensed under the MIT license
  */
 
-/*!
- * $ Simple glitching plugin
- * Author: Igor Brkic <igor@hyperglitch.com>
- * Version 0.0.1
- * Licensed under the MIT license
- */
 (function ($) {
     $.fn.glitch = function (options) {
         var s = $.extend({

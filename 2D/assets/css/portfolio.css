@@ -265,6 +265,10 @@ a {
         font-size: 14px;
     }
 
+    .btn a {
+        margin: 5px 0px 5px 0px;
+    }
+
     .prop-pos {
         left: 2%;
     }
@@ -286,6 +290,10 @@ a {
         height: auto;
         max-height: 400px;
         padding: 40px;
+    }
+
+    .flex {
+        display: inline-block;
     }
 
     .brain-video {

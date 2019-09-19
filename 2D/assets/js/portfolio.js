@@ -62,4 +62,20 @@ $(function () {
         $('#modalArea7').fadeOut()
         $.scrollify.enable()
     })
+    $('#openModal9').click(function () {
+        $('#modalArea9').fadeIn()
+        $.scrollify.disable()
+    })
+    $('#closeModal9, #modalBg9').click(function () {
+        $('#modalArea9').fadeOut()
+        $.scrollify.enable()
+    })
+    $('#openModal10').click(function () {
+        $('#modalArea10').fadeIn()
+        $.scrollify.disable()
+    })
+    $('#closeModal10, #modalBg10').click(function () {
+        $('#modalArea10').fadeOut()
+        $.scrollify.enable()
+    })
 })

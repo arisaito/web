@@ -254,6 +254,14 @@ a {
     width: 43px;
 }
 
+#modalArea2 .sub {
+    max-height: 450px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
 #modalArea9 .sub {
     max-height: 450px;
     width: auto;
@@ -349,6 +357,10 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+    #modalArea2 .sub {
+        width: 50vw;
+    }
+ 
     #modalArea9 .sub {
         width: 50vw;
     }

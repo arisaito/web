@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code drawing: The light that captures me</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="p5.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <script>
+      let word = "ひかり、ここから抜けだす方法";
+      let centY;
+      let x = 0;
+      let y = 0;
+      let r;
+      let theta = 0.0;
+      let easing = 0.5;
+
+      let amplitude = 1.0; // size of wave
+      let frequency = 10; // frequency
+
+      let fontSize;
+      let fontRegular;
+
+      setup = _ => {
+        // loadFont("Noto_Sans_JP/NotoSansJP-Black.otf");
+        createCanvas(windowWidth, windowHeight);
+        textAlign(CENTER, CENTER);
+        textSize(33);
+        background(230);
+
+        x = width / 2;
+        centY = height / 2;
+        r = height / 3;
+      };
+
+      draw = _ => {
+        for (var i = 0; i < 2; i++) {
+          background(255, 255, 255, 0);
+          fill(0);
+          y = centY + r * sin(radians(theta));
+          theta += 4.0;
+          smooth();
+          textFont("Noto Sans JP");
+          text(word, x, y);
+        }
+      };
+
+      function windowResized() {
+        setup();
+      }
+    </script>
+    <!-- <canvas id="lighted-field"></canvas> -->
+  </body>
+</html>

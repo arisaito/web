@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code drawing: The light that captures me</title>
+    <script src="processing.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <script type="application/processing">
+      string s = "ひかり、ここから抜け出す方法";
+      float x;
+      float y;
+      float center;
+      float r;
+      float theta = 0.0;
+      float easing = 0.5;
+      flaot amplitude = 1.0;
+      float frequency = 10;
+
+      void setup() {
+        float width = window.innerWidth;
+        float height = window.innerHeight;
+
+        smooth();
+        size(width, height, P2D);
+        x = width / 2;
+        center = height / 2;
+        r = height / 2.8;
+        background(230);
+        frameRate(150);
+      }
+
+      void draw() {
+          y = center + r * sin(radians(theta) );
+          theta += 4.0;
+          textSize(40);
+          textAlign(CENTER, CENTER);
+          fill(0);
+          text(s, x, y);
+
+          if (width < innerWidth || width > innerWidth || height < innerHeight || height > innerHeight){
+            setup();
+          }
+        }
+    </script>
+    <canvas id="lighted-field"></canvas>
+    <script>
+      const dpr = window.devicePixelRatio || 1;
+
+      function onWindowResize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+
+        ctx.scale(dpr, dpr);
+
+        canvas.style.width = width + "px";
+        canvas.style.height = height + "px";
+      }
+    </script>
+  </body>
+</html>

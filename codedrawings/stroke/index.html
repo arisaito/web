@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code drawing: Stroke</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.9.0/lib/p5.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <script>
+      function setup() {
+        canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+      }
+
+      function draw() {
+        rotateZ(frameCount * 0.005);
+        rotateX(frameCount * 0.005);
+        rotateY(frameCount * 0.005);
+        if (windowWidth > windowHeight) {
+          let boxScale = windowHeight / 2.5;
+          box(boxScale, boxScale, boxScale);
+        } else {
+          let boxScale = windowWidth / 2.5;
+          box(boxScale, boxScale, boxScale);
+        }
+      }
+
+      function windowResized() {
+        setup();
+      }
+    </script>
+  </body>
+</html>

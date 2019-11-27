@@ -29,7 +29,12 @@
         center = height / 2;
         r = height / 2.8;
         background(225);
-        frameRate(130);
+
+        if (width <= 600 ){
+          frameRate(180);
+        } else {
+          frameRate(130);
+        }
       }
 
       void draw() {

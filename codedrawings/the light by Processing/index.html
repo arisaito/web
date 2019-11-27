@@ -9,9 +9,7 @@
   </head>
   <body style="margin: 0; overflow: hidden">
     <script type="application/processing">
-
       string s = "ひかり、ここから抜け出す方法";
-
       float x;
       float y;
       float center;
@@ -20,10 +18,9 @@
       flaot amplitude = 1.0;
       float frequency = 10;
 
-      float width = window.innerWidth;
-      float height = window.innerHeight;
-
       void setup() {
+        float width = window.innerWidth;
+        float height = window.innerHeight;
         size(width, height);
         x = width / 2;
         center = height / 2;
@@ -38,7 +35,7 @@
       }
 
       void draw() {
-        y = center + r * sin(radians(theta));
+        y = center + r * sin(radians(theta) );
         theta += 4.0;
         if (width <= 600 ){
           textSize(20);
@@ -47,7 +44,6 @@
         }
         textAlign(CENTER, CENTER);
         fill(0);
-        smooth();
         text(s, x, y);
 
         if (width < innerWidth || width > innerWidth || height < innerHeight || height > innerHeight){
@@ -56,5 +52,17 @@
       }
     </script>
     <canvas id="lighted-field"></canvas>
+    <script>
+      const dpr = window.devicePixelRatio || 1;
+      function onWindowResize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        ctx.scale(dpr, dpr);
+        canvas.style.width = width + "px";
+        canvas.style.height = height + "px";
+      }
+    </script>
   </body>
 </html>

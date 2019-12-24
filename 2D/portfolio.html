@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <!-- 
+  <head>
+    <!-- 
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -26,334 +25,480 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
   -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>portfolio2019</title>
-  <link href="assets/css/portfolio.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
-  <script src="assets/js/portfolio.js"></script>
-  <script src="assets/js/pagetop.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>portfolio2019</title>
+    <link href="assets/css/portfolio.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/pagetop.js"></script>
 
-  <!-- Twitter card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@saharu54" />
-  <meta property="og:url" content="https://arisaito.github.io/web/2D/portfolio.html" />
-  <meta property="og:title" content="Arisa Ito Portfolio" />
-  <meta property="og:description" content="arisa ito's portfolio 2019" />
-  <meta property="og:image" content="https://arisaito.github.io/web/2D/assets/pf_img/twittercard.png" />
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@saharu54" />
+    <meta
+      property="og:url"
+      content="https://arisaito.github.io/web/2D/portfolio.html"
+    />
+    <meta property="og:title" content="Arisa Ito Portfolio" />
+    <meta property="og:description" content="arisa ito's portfolio 2019" />
+    <meta
+      property="og:image"
+      content="https://arisaito.github.io/web/2D/assets/pf_img/twittercard.png"
+    />
+  </head>
 
-</head>
-
-<body>
-  <div class="cursor"></div>
-  <div class="follower"></div>
-  <div class="pagetop"><a href="#wrap">
-      <img id="arrow" src="assets/other/arrow.png" alt="topへ戻る">
-    </a></div>
-
-  <!--box1 arisaito-->
-  <div class="box box1">
-    <div class="text-pos">
-      <img class="text" src="assets/pf_text/text_arisaito.png">
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="pagetop">
+      <a href="#wrap">
+        <img id="arrow" src="assets/other/arrow.png" alt="topへ戻る" />
+      </a>
     </div>
-    <div class="img-pos">
-      <img class="art" id="openModal1" src="assets/pf_img/profile2.png">
-    </div>
-    <div class="prop-pos">
-      <img class="text" src="assets/pf_text/text_copyright.png">
-    </div>
-  </div>
 
-  <!-- modal start -->
-  <section id="modalArea1" class="modalArea">
-    <div id="modalBg1" class="modalBg"></div>
-    <div class="modalWrapper">
-      <div class="modalContents">
-        <h1>Arisa Ito
-        </h1>
-        <h2>Artist</h2>
-        <br>
-        <p>2012 名古屋芸術大学中退</p>
-        <p>2014 イギリス ロンドン Goldsmiths校 BA Fine Art Extension course修了</p>
-        <br>
-        <p>■受賞歴</p>
-        <p>2012 ヴァニラ画廊大賞 都築響一賞</p>
-        <br>
-        <p>■個展</p>
-        <p>2019 <a href="https://www.facebook.com/events/417523905598664/">INTERWOVEN</a>(東京)</p>
-        <br>
-        <p>■グループ展</p>
-        <p>2013 ヴァニラ画廊大賞展(東京)</p>
-        <p>ヴァニラ画廊大賞三人展(東京)</p>
-        <p>2014 We Are All Porous Bodies(ロンドン)</p>
-        <p>2015~2018 Obsession(愛知)</p>
-        <p>2019 都立神代植物園 夜間開園アートイベント(東京)</p>
-        <p>2019 VIVET(東京)</p>
-        <br>
+    <!--box1 arisaito-->
+    <div class="box box1">
+      <div class="text-pos">
+        <img class="text" src="assets/pf_text/text_arisaito.png" />
+      </div>
+      <div class="img-pos">
+        <img
+          class="art l-small"
+          id="openModal1"
+          src="assets/pf_img/profile.png"
+        />
+      </div>
+      <div class="prop-pos">
+        <img class="text" src="assets/pf_text/text_copyright.png" />
+      </div>
+    </div>
 
-        <div class="flex">
-          <!-- <div class="btn" id="btn01"><a href="https://github.com/arisaito" target="_blank">GitHub</a></div>
+    <!-- modal start -->
+    <section id="modalArea1" class="modalArea">
+      <div id="modalBg1" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <h1>Arisa Ito</h1>
+          <h2>Artist</h2>
+          <br />
+          <p>
+            伊藤有沙はドローイングを制作の最小単位として位置付け、手法として導入する一方、支持体と媒体は多岐に渡ります。<br /><br />
+            アナログからデジタルメディアに領域を横断する制作の中で、「存在の意義」が変わりうる予感を一貫して表現しながら、具象と抽象を行き来する活動の結果として生み出される作品は、時間感覚を揺さぶり、環境によって獲得される自己像の儚さと不確かさを突きつけるのです。<br /><br />
+            AR/VRなどのソフトウェア、ブロックチェーン、仮想通貨などの情報技術の社会実装が始まる前夜。未来はどう定義されるべきなのかと言う問いに彼女は最大の関心を寄せています。<br /><br />
+            文: 高屋永遠 - アーティスト,「why not?」ギャラリスト<br /><br />
+          </p>
+          <p>-----</p>
+          <br />
+          <p>2012 名古屋芸術大学中退</p>
+          <p>
+            2014 イギリス ロンドン Goldsmiths校 BA Fine Art Extension course修了
+          </p>
+          <br />
+          <p>■受賞歴</p>
+          <p>2012 ヴァニラ画廊大賞 都築響一賞</p>
+          <br />
+          <p>■個展</p>
+          <p>
+            2019
+            <a href="https://www.facebook.com/events/417523905598664/"
+              >INTERWOVEN</a
+            >(東京)
+          </p>
+          <br />
+          <p>■グループ展</p>
+          <p>2013 ヴァニラ画廊大賞展(東京)</p>
+          <p>ヴァニラ画廊大賞三人展(東京)</p>
+          <p>2014 We Are All Porous Bodies(ロンドン)</p>
+          <p>2015~2018 Obsession(愛知)</p>
+          <p>2019 都立神代植物園 夜間開園アートイベント(東京)</p>
+          <p>2019 VIVET(東京)</p>
+          <br />
+
+          <div class="flex">
+            <!-- <div class="btn" id="btn01"><a href="https://github.com/arisaito" target="_blank">GitHub</a></div>
           <div class="btn" id="btn02"><a href="https://qiita.com/Damien" target="_blank">Qiita</a></div> -->
-          <div class="btn"><a href="https://arisa-ito.tumblr.com/" target="_blank">~2018 Art Works</a></div>
+            <div class="btn">
+              <a href="https://arisa-ito.tumblr.com/" target="_blank"
+                >~2018 Art Works</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="closeModal1" class="closeModal">
+          ×
         </div>
       </div>
-      <div id="closeModal1" class="closeModal">
-        ×
+    </section>
+    <!-- modal end -->
+
+    <!--box11 being.apk-->
+    <div class="box box11">
+      <div class="text-pos">
+        <img class="text" src="assets/pf_text/text_being.png" />
+      </div>
+      <div class="img-pos">
+        <img class="art" id="openModal11" src="assets/pf_img/being.jpg" />
+      </div>
+      <div class="prop-pos">
+        <img class="text" src="assets/pf_text/text_mixed.png" />
       </div>
     </div>
-  </section>
-  <!-- modal end -->
 
-  <!--box2 brain in a vat-->
-  <div class="box box2">
-    <div class="text-pos">
-      <img class="text" src="assets/pf_text/text_brain.png">
-    </div>
-    <div class="img-pos">
-      <img class="art" id="openModal2" src="assets/pf_img/brain.gif">
-    </div>
-    <div class="prop-pos">
-      <img class="text" src="assets/pf_text/concept_develop.png">
-    </div>
-  </div>
+    <!-- modal start -->
+    <section id="modalArea11" class="modalArea">
+      <div id="modalBg11" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <img
+            class="sub l-small l-center"
+            src="assets/pf_img/sub/being1.gif"
+            alt=""
+          />
+          <br />
+          <h1>being.apk</h1>
+          <h2>Mixed media installation</h2>
+          <h2>2019</h2>
+          <br />
+          <p>
+            15台のVRヘッドセット<br />
+            覗くと鑑賞者は一枚の鏡の前<br />
+            映っているのは自分自身<br />
+            しかし一人称視点のアバターである<br />
+            <br />
+          </p>
+          <p>
+            美少女、ロボット、ドラゴン、顔のないローポリの人、植物、パーティクル、石…<br />
+            鑑賞者は人間 /
+            非人間の15種類のアバターを着せ替え人形のように取り替えることができる。
+          </p>
+          <br />
+          <p>
+            頭を左右に回すとVR内のアバターも同期して頭を同じ方向に回す。<br />
+            人型のアバターは、右手（コントローラー）の動きも同期する。
+          </p>
+          <br />
+          <p>
+            現在我々が持っている「SNSの複数のサブ垢」が<br />
+            存在の解像度を増して、3Dになり、我々の動きに同期する時代<br />
+            私たちのアイデンティティーは自分自身かアバターか、どちらに宿るのか？<br />
+            どんな姿で生きていくか？<br />
+            存在の在り方が変わる予兆の設置
+          </p>
+          <br /><br />
+          <div class="sketchfab-embed-wrapper">
+            <iframe
+              title="A 3D model"
+              width="640"
+              height="380"
+              src="https://sketchfab.com/models/71feb09601b34f64a5cabca30b3a4712/embed"
+              frameborder="0"
+              allow="autoplay; fullscreen; vr"
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+            ></iframe>
 
-  <!-- modal start -->
-  <section id="modalArea2" class="modalArea">
-    <div id="modalBg2" class="modalBg"></div>
-    <div class="modalWrapper">
-      <div class="modalContents">
-        <iframe class="brain-video" src="https://player.vimeo.com/video/332143168" frameborder="0" allow="autoplay; fullscreen"
-          allowfullscreen></iframe>
-        <p><a href="https://vimeo.com/332143168">Brain in a vat 【Trailer】</a> from <a href="https://vimeo.com/arisaito">Arisa
-            Ito</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-        <br>
-        <h1>Brain in a vat</h1>
-        <h2>VR game by Unity(C#)</h2>
-        <h2>2019</h2>
-        <br>
-        <p>SNSのサブアカや仮想現実（VR）などを使い分けて、わたしたちの人格や肉体は複数に増えていく。</p>
-        <p>でもそんな世界でわたしたちのアイデンティティがどうなっていくかは誰も知らない。</p>
-        <br>
-        <p>水槽の脳の思考実験</p>
-        <p>
-          <font color="grey">【いまわたしが生きていると思っている現実は、 実は培養液の水槽で脳が見ている仮想現実。視覚や触覚、感じる刺激は全て繋がれたコンピューターから流れてくる人工的な刺激にすぎない】</font>
-        </p>
-        <br>
-        <p>この思考実験の「仮想現実」と「現実」をひっくり返したVRゲーム「Brain in a vat」。</p>
-        <p>あなたはヘッドマウントディスプレイをかぶり、仮想現実の中で「本当の自分」を探しに行く。
-        </p>
-        <p>これは思考実験だけど、果たしてプレイヤーはなにが現実でなにが仮想か、ハックすることは可能だろうか？</p>
-        <br><br>
-        <img src="assets/pf_img/sub/br01.png" class="sub">
-        <br>
-        <img src="assets/pf_img/sub/br02.png" class="sub">
-        <br>
-        <img src="assets/pf_img/sub/br03.png" class="sub">
-        <p>still images by "Brain in a vat"</p>
+            <p
+              style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"
+            >
+              <a
+                href="https://sketchfab.com/3d-models/a-part-of-interwoven-71feb09601b34f64a5cabca30b3a4712?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
+                target="_blank"
+                style="font-weight: bold; color: #1CAAD9;"
+                >A part of INTERWOVEN</a
+              >
+              by
+              <a
+                href="https://sketchfab.com/saharu54?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
+                target="_blank"
+                style="font-weight: bold; color: #1CAAD9;"
+                >AI</a
+              >
+              on
+              <a
+                href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
+                target="_blank"
+                style="font-weight: bold; color: #1CAAD9;"
+                >Sketchfab</a
+              >
+            </p>
+          </div>
+          <!-- <img src="assets/pf_img/sub/br01.png" class="sub">
+        <p>still images by "Brain in a vat"</p> -->
+        </div>
+        <div id="closeModal11" class="closeModal">
+          ×
+        </div>
       </div>
-      <div id="closeModal2" class="closeModal">
-        ×
-      </div>
-    </div>
-  </section>
-  <!-- modal end -->
+    </section>
+    <!-- modal end -->
 
-  <!--box10 new! code drawing-->
-  <div class="box box10">
-    <div class="text-pos">
-      <img class="text" src="assets/pf_text/text_CodeDrawing.png">
-    </div>
-    <div class="img-pos">
-      <img class="art" id="openModal10" src="assets/pf_img/codedr.PNG">
-    </div>
-    <div class="prop-pos">
-      <img class="text" src="assets/pf_text/concept_develop_design.png">
-    </div>
-  </div>
-
-  <!-- modal start -->
-  <section id="modalArea10" class="modalArea">
-    <div id="modalBg10" class="modalBg"></div>
-    <div class="modalWrapper">
-      <div class="modalContents">
-        <img src="assets/pf_img/sub/codedr.gif" class="sub">
-        <br>
-        <h1>Code Drawings</h1>
-        <h2>p5.js, Three.js</h2>
-        <h2>2019-</h2>
-        <br>
-        <p>コードで、視覚的表現や痕跡を残すアプローチ。習作。</p>
-        <br>
-        <p>それは自分のプリミティブな、ドローイング・ペインティングから始まった創作活動となんら変わりのない。</p>
-        <p>コードドローイングと名付ける。</p>
-        <br>
-        <img src="assets/pf_img/sub/codedr02.gif" class="sub">
-        <br>
-        <!-- <img src="assets/pf_img/sub/codedr04.gif" class="sub">
-        <br>
-        <img src="assets/pf_img/sub/codedr05.GIF" class="sub">
-        <br> -->
-        <p>↓Other drawings are here</p>
-        <div class="btn" id="btn03"><a href="https://neort.io/bIPgZcHJg5O3AmMgNyc5Uq7Iw4b2" target="_blank">NEORT</a></div>
-        <br>
+    <!--box2 brain in a vat-->
+    <div class="box box2">
+      <div class="text-pos">
+        <img class="text" src="assets/pf_text/text_brain.png" />
       </div>
-      <div id="closeModal10" class="closeModal">
-        ×
+      <div class="img-pos">
+        <img class="art" id="openModal2" src="assets/pf_img/brain.gif" />
       </div>
-    </div>
-  </section>
-  <!-- modal end -->
-
-  <!--box3 dimention game-->
-  <div class="box box3">
-    <div class="text-pos">
-      <img class="text" src="assets/pf_text/dimentiongame.png">
-    </div>
-    <div class="img-pos">
-      <img class="art" id="openModal3" src="assets/pf_img/dimention2.png">
-    </div>
-    <div class="prop-pos">
-      <img class="text" src="assets/pf_text/concept_develop_design.png">
-    </div>
-  </div>
-
-  <!-- modal start -->
-  <section id="modalArea3" class="modalArea">
-    <div id="modalBg3" class="modalBg"></div>
-    <div class="modalWrapper">
-      <div class="modalContents">
-        <h1>Dimention Game</h1>
-        <h2>webGL game by Unity(C#)</h2>
-        <h2>2019</h2>
-        <div class="btn"><a href="https://arisaito.github.io/DimentionGame/v3.0/index.html" target="_blank">PLAY HERE</a></div>
-        <p>* PC only</p>
-        <img src="assets/pf_img/sub/dimention2.png" class="sub">
-        <br>
-        <img src="assets/pf_img/sub/dimention1.png" class="sub">
-        <p>still images by "Dimention Game"</p>
-      </div>
-      <div id="closeModal3" class="closeModal">
-        ×
+      <div class="prop-pos">
+        <img class="text" src="assets/pf_text/text_vrgame.png" />
       </div>
     </div>
-  </section>
-  <!-- modal end -->
 
-  <!--  -->
-
-  <!--box9 new!! AR水中植物園-->
-  <div class="box box9">
-    <div class="text-pos">
-      <img class="text" src="assets/pf_text/text_ARplant.png">
-    </div>
-    <div class="img-pos">
-      <img class="art" id="openModal9" src="https://www.arisaito.com/2D/assets/pf_img/ARplant.jpg">
-    </div>
-    <div class="prop-pos">
-      <img class="text" src="assets/pf_text/develop.png">
-    </div>
-  </div>
-
-  <!-- modal start -->
-  <section id="modalArea9" class="modalArea">
-    <div id="modalBg9" class="modalBg"></div>
-    <div class="modalWrapper">
-      <div class="modalContents">
-        <img src="assets/pf_img/sub/ARplant.gif" class="sub">
-        <br>
-        <h1>AR水中植物園</h1>
-        <h2>WebAR、インスタレーション</h2>
-        <h2>2019</h2>
-        <p>※アーティスト<a href="https://guru2mawarou.wixsite.com/akimimiyamoto">宮本暎未</a>との共同制作</p>
-        <br>
-        <p>【AR水中植物公園】</p>
-        <br>
-        <p>今日の神代植物公園は海の中</p>
-        <p>泡の様なシャボン玉に誘われて、</p>
-        <p>夜の植物公園に花のみたいなクラゲ</p>
-        <p>「ハナクラゲ」が満開に咲く</p>
-        <br>
-        <p>本作は2019年8月3、4日に行われた都立神代植物公園の夜間開園にて設置されたインスタレーション作品です。</p>
-        <p>来場者は現地に設置されたQRコードを自身のスマホで読み取ることで、専用WebARページへアクセスし、ハナクラゲたちを鑑賞することができました。</p>
-        <br>
-        <p>concept, design, 3Dmodeling: Akimi Miyamoto</p>
-        <p>develop: Arisa Ito</p>
+    <!-- modal start -->
+    <section id="modalArea2" class="modalArea">
+      <div id="modalBg2" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <img src="assets/pf_img/sub/brain1.gif" class="sub l-small" />
+          <br />
+          <h1>Brain in a vat</h1>
+          <h2>VR game by Unity(C#)</h2>
+          <h2>2019</h2>
+          <br />
+          <p>
+            「水槽の脳」とは「今見ている目の前の世界が実は仮想現実で、現実であなたは電極に繋がれた水槽の脳かもしれない」という思考実験。
+          </p>
+          <br />
+          <p>
+            しかし我々が水槽の脳だろうが何だろうが
+            「夢を夢だと知覚できるのは目が覚めている時だけ」で、
+            今の世界に完全没入していたらそもそもメタ的別世界を知覚することはないので
+            この思考実験は考えることがそもそもナンセンス、というメタファーだ。
+          </p>
+          <br />
+          <p>
+            VR作品「Brain in a
+            vat」は水槽の中と原風景みたいな海のシーンを永遠とループするVRゲーム。<br />
+            このゲームには「タイトルに戻るボタン」があって能動的にプレイヤーはゲームを止めることもできる。<br />
+            ここでプレイヤーは夢（仮想現実）を知覚している水槽の脳のようでもある。
+          </p>
+          <br />
+          <img src="assets/pf_img/sub/brain3.png" class="sub sub__img" />
+          <br />
+          <img src="assets/pf_img/sub/brain4.png" class="sub sub__img" />
+          <p>still images by "Brain in a vat"</p>
+        </div>
+        <div id="closeModal2" class="closeModal">
+          ×
+        </div>
       </div>
-      <div id="closeModal9" class="closeModal">
-        ×
+    </section>
+    <!-- modal end -->
+
+    <!--box10 new! code drawing-->
+    <div class="box box10">
+      <div class="text-pos">
+        <img class="text" src="assets/pf_text/text_CodeDrawing.png" />
+      </div>
+      <div class="img-pos">
+        <img class="art" id="openModal10" src="assets/pf_img/codedr.PNG" />
+      </div>
+      <div class="prop-pos">
+        <img class="text" src="assets/pf_text/text_processing.png" />
       </div>
     </div>
-  </section>
-  <!-- modal end -->
 
-  <!--box6 概念メルカリ-->
-  <div class="box box6">
-    <div class="text-pos">
-      <img class="text" src="assets/pf_text/text_gainen.png">
-    </div>
-    <div class="img-pos">
-      <img class="art" id="openModal6" src="assets/pf_img/gainen.png">
-    </div>
-    <div class="prop-pos">
-      <img class="text" src="assets/pf_text/concept.png">
-    </div>
-  </div>
+    <!-- modal start -->
+    <section id="modalArea10" class="modalArea">
+      <div id="modalBg10" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <img src="assets/pf_img/sub/codedr.gif" class="sub" />
+          <br />
+          <h1>Code Drawings</h1>
+          <h2>p5.js, Three.js</h2>
+          <h2>2019-</h2>
+          <br />
+          <p>コードで、視覚的表現や痕跡を残すアプローチ。習作。</p>
+          <br />
+          <p>
+            それは自分のプリミティブな、ドローイング・ペインティングから始まった創作活動となんら変わりのない。
+          </p>
+          <p>コードドローイングと名付ける。</p>
+          <br />
+          <img src="assets/pf_img/sub/codedr02.gif" class="sub" />
+          <br />
+          <p>↓Other drawings are here</p>
+          <div class="btn" id="btn03">
+            <a
+              href="https://neort.io/bIPgZcHJg5O3AmMgNyc5Uq7Iw4b2"
+              target="_blank"
+              >NEORT</a
+            >
+          </div>
+          <br />
+        </div>
+        <div id="closeModal10" class="closeModal">
+          ×
+        </div>
+      </div>
+    </section>
+    <!-- modal end -->
 
-  <!-- modal start -->
-  <section id="modalArea6" class="modalArea">
-    <div id="modalBg6" class="modalBg"></div>
-    <div class="modalWrapper">
-      <div class="modalContents">
-        <img src="assets/pf_img/gainen.png" class="sub">
-        <hr>
-        <hr>
-        <h1>概念メル●リ</h1>
-        <!-- <h2>Sketch, adobeXD(デザインプロトのみ)</h2> -->
-        <h2>2019-wip...</h2>
-        <br>
-        <p>【概念メル●リ】は概念を売買できるサービス</p>
-        <br>
-        <p>売られているのはどれも目に見えない概念</p>
-        <p>例えば、もうここにいないあの人への愛情とか、
-          誰にも打ち明けられない悲しみとか】
-        </p>
-        <br>
-        <p>以前、仮想通貨系の事業に携わっていたとき、</p>
-        <p>仕事のことを田舎の友人に話したら</p>
-        <p>「仮想通貨は信用できないよね、仮想だから」</p>
-        <p>などと、意味のわからないことを言うのです。</p>
-        <br>
-        <p>しかし、その言葉に象徴されるように</p>
-        <p>大多数の人が「法定通貨（お金）の価値は絶対価値」と言う思いこみをどこかで抱いているように思います。</p>
-        <p>実際は価格崩壊もあり得ますし、貨幣の絶対価値は共同幻想にしかすぎません。</p>
-        <br>
-        <p>概念メル●リは、幻想同士は売り買いをしようという思考実験です。</p>
-        <p>「愛」や「気持ち」という個人幻想と、お金という共同幻想。</p>
-        <br>
-        <p>果たしてそこに「等価交換」は成り立つのでしょうか？</p>
-        <br>
-        <!-- <p>コンセプトは「目に見えないものとお金っていうのは等価交換されるのか？」</p>
+    <!--box3 dimention game-->
+    <div class="box box3">
+      <div class="text-pos">
+        <img class="text" src="assets/pf_text/dimentiongame.png" />
+      </div>
+      <div class="img-pos">
+        <img class="art" id="openModal3" src="assets/pf_img/dimention2.png" />
+      </div>
+      <div class="prop-pos">
+        <img class="text" src="assets/pf_text/text_pcgame.png" />
+      </div>
+    </div>
+
+    <!-- modal start -->
+    <section id="modalArea3" class="modalArea">
+      <div id="modalBg3" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <h1>Dimention Game</h1>
+          <h2>webGL game by Unity(C#)</h2>
+          <h2>2019</h2>
+          <div class="btn">
+            <a
+              href="https://arisaito.github.io/DimentionGame/v3.0/index.html"
+              target="_blank"
+              >PLAY HERE</a
+            >
+          </div>
+          <p>* PC only</p>
+          <img src="assets/pf_img/sub/dimention2.png" class="sub" />
+          <br />
+          <img src="assets/pf_img/sub/dimention1.png" class="sub" />
+          <p>still images by "Dimention Game"</p>
+        </div>
+        <div id="closeModal3" class="closeModal">
+          ×
+        </div>
+      </div>
+    </section>
+    <!-- modal start -->
+    <section id="modalArea9" class="modalArea">
+      <div id="modalBg9" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <img src="assets/pf_img/sub/ARplant.gif" class="sub" />
+          <br />
+          <h1>AR水中植物園</h1>
+          <h2>WebAR、インスタレーション</h2>
+          <h2>2019</h2>
+          <p>
+            ※アーティスト<a
+              href="https://guru2mawarou.wixsite.com/akimimiyamoto"
+              >宮本暎未</a
+            >との共同制作
+          </p>
+          <br />
+          <p>【AR水中植物公園】</p>
+          <br />
+          <p>今日の神代植物公園は海の中</p>
+          <p>泡の様なシャボン玉に誘われて、</p>
+          <p>夜の植物公園に花のみたいなクラゲ</p>
+          <p>「ハナクラゲ」が満開に咲く</p>
+          <br />
+          <p>
+            本作は2019年8月3、4日に行われた都立神代植物公園の夜間開園にて設置されたインスタレーション作品です。
+          </p>
+          <p>
+            来場者は現地に設置されたQRコードを自身のスマホで読み取ることで、専用WebARページへアクセスし、ハナクラゲたちを鑑賞することができました。
+          </p>
+          <br />
+          <p>concept, design, 3Dmodeling: Akimi Miyamoto</p>
+          <p>develop: Arisa Ito</p>
+        </div>
+        <div id="closeModal9" class="closeModal">
+          ×
+        </div>
+      </div>
+    </section>
+    <!-- modal end -->
+
+    <!--box6 概念メルカリ-->
+    <div class="box box6">
+      <div class="text-pos">
+        <img class="text" src="assets/pf_text/text_gainen.png" />
+      </div>
+      <div class="img-pos">
+        <img class="art" id="openModal6" src="assets/pf_img/gainen.png" />
+      </div>
+      <div class="prop-pos">
+        <img class="text" src="assets/pf_text/concept.png" />
+      </div>
+    </div>
+
+    <!-- modal start -->
+    <section id="modalArea6" class="modalArea">
+      <div id="modalBg6" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <img src="assets/pf_img/gainen.png" class="sub" />
+          <hr />
+          <hr />
+          <h1>概念メル●リ</h1>
+          <!-- <h2>Sketch, adobeXD(デザインプロトのみ)</h2> -->
+          <h2>2019-wip...</h2>
+          <br />
+          <p>【概念メル●リ】は概念を売買できるサービス</p>
+          <br />
+          <p>売られているのはどれも目に見えない概念</p>
+          <p>
+            例えば、もうここにいないあの人への愛情とか、
+            誰にも打ち明けられない悲しみとか】
+          </p>
+          <br />
+          <p>以前、仮想通貨系の事業に携わっていたとき、</p>
+          <p>仕事のことを田舎の友人に話したら</p>
+          <p>「仮想通貨は信用できないよね、仮想だから」</p>
+          <p>などと、意味のわからないことを言うのです。</p>
+          <br />
+          <p>しかし、その言葉に象徴されるように</p>
+          <p>
+            大多数の人が「法定通貨（お金）の価値は絶対価値」と言う思いこみをどこかで抱いているように思います。
+          </p>
+          <p>
+            実際は価格崩壊もあり得ますし、貨幣の絶対価値は共同幻想にしかすぎません。
+          </p>
+          <br />
+          <p>概念メル●リは、幻想同士は売り買いをしようという思考実験です。</p>
+          <p>「愛」や「気持ち」という個人幻想と、お金という共同幻想。</p>
+          <br />
+          <p>果たしてそこに「等価交換」は成り立つのでしょうか？</p>
+          <br />
+          <!-- <p>コンセプトは「目に見えないものとお金っていうのは等価交換されるのか？」</p>
         <p>ストーリーや目に見えない体験にお金を払うトレンドと、仮想通貨という目に見えないお金のトレンドが交差する時代で</p>
         <p>目に見えないものを目に見えないお金(仮想通貨)で売り買いするお店やさんごっこ</p>
         <br>
         <p>そこに等価交換は成り立つのか？</p>
         <br> -->
-        <center><iframe src="https://player.vimeo.com/video/331964261" height="400px" width=auto frameborder="0" allow="autoplay; fullscreen"
-            allowfullscreen></iframe>
-        </center>
+          <center>
+            <iframe
+              src="https://player.vimeo.com/video/331964261"
+              height="400px"
+              width="auto"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </center>
+        </div>
+        <div id="closeModal6" class="closeModal">
+          ×
+        </div>
       </div>
-      <div id="closeModal6" class="closeModal">
-        ×
-      </div>
-    </div>
-  </section>
-  <!-- modal end -->
+    </section>
+    <!-- modal end -->
 
-
-  <!--box4 VRT#1-->
-  <!-- <div class="box box4">
+    <!--box4 VRT#1-->
+    <!-- <div class="box box4">
     <div class="text-pos">
       <img class="text" src="assets/pf_text/text_vrt.png">
     </div>
@@ -365,8 +510,8 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     </div>
   </div> -->
 
-  <!-- modal start -->
-  <!-- <section id="modalArea4" class="modalArea">
+    <!-- modal start -->
+    <!-- <section id="modalArea4" class="modalArea">
     <div id="modalBg4" class="modalBg"></div>
     <div class="modalWrapper">
       <div class="modalContents">
@@ -398,11 +543,10 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
       </div>
     </div>
   </section> -->
-  <!-- modal end -->
+    <!-- modal end -->
 
-
-  <!--box5 たのしいweb屋さん-->
-  <!-- <div class="box box5">
+    <!--box5 たのしいweb屋さん-->
+    <!-- <div class="box box5">
     <div class="text-pos">
       <img class="text" src="assets/pf_text/text_webya.png">
     </div>
@@ -414,8 +558,8 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     </div>
   </div> -->
 
-  <!-- modal start -->
-  <!-- <section id="modalArea5" class="modalArea">
+    <!-- modal start -->
+    <!-- <section id="modalArea5" class="modalArea">
     <div id="modalBg5" class="modalBg"></div>
     <div class="modalWrapper">
       <div class="modalContents">
@@ -440,11 +584,10 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
       </div>
     </div>
   </section> -->
-  <!-- modal end -->
+    <!-- modal end -->
 
-
-  <!--box7 monetan-->
-  <!-- <div class="box box7">
+    <!--box7 monetan-->
+    <!-- <div class="box box7">
     <div class="text-pos">
       <img class="text" src="assets/pf_text/text_mone.png">
     </div>
@@ -456,8 +599,8 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     </div>
   </div> -->
 
-  <!-- modal start -->
-  <!-- <section id="modalArea7" class="modalArea">
+    <!-- modal start -->
+    <!-- <section id="modalArea7" class="modalArea">
     <div id="modalBg7" class="modalBg"></div>
     <div class="modalWrapper">
       <div class="modalContents">
@@ -481,17 +624,36 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
       </div>
     </div>
   </section> -->
-  <!-- modal end -->
+    <!-- modal end -->
 
-  <!--box8 その他のページ-->
-  <div class="box box8">
-    <div class="last-page-pos">
-      <img class="last-page-img" id="last-contact" src="assets/pf_text/text_mail.png">
-      <!-- <a href="https://arisa-ito.tumblr.com/" target="_blank"><img class="last-page-img" id="last-artwork" src="assets/pf_text/text_artworklink.png"></a> -->
-      <a href="https://twitter.com/saharu54" target="_blank"><img class="last-page-img" id="last-twitter" src="assets/pf_text/text_twitterlink.png"></a>
-      <a href="https:/www.arisaito.com" target="_blank"><img class="last-page-img" id="last-web" src="assets/pf_text/text_weblink.png"></a>
-      <img class="last-page-img" id="last-arisa" src="assets/pf_text/text_last_arisaito.png">
+    <!--box8 その他のページ-->
+    <div class="box box8">
+      <div class="last-page-pos">
+        <img
+          class="last-page-img"
+          id="last-contact"
+          src="assets/pf_text/text_mail.png"
+        />
+        <!-- <a href="https://arisa-ito.tumblr.com/" target="_blank"><img class="last-page-img" id="last-artwork" src="assets/pf_text/text_artworklink.png"></a> -->
+        <a href="https://twitter.com/saharu54" target="_blank"
+          ><img
+            class="last-page-img"
+            id="last-twitter"
+            src="assets/pf_text/text_twitterlink.png"
+        /></a>
+        <a href="https:/www.arisaito.com" target="_blank"
+          ><img
+            class="last-page-img"
+            id="last-web"
+            src="assets/pf_text/text_weblink.png"
+        /></a>
+        <img
+          class="last-page-img"
+          id="last-arisa"
+          src="assets/pf_text/text_last_arisaito.png"
+        />
+      </div>
     </div>
-</body>
-
+  </body>
+  <script src="assets/js/cursor2.js"></script>
 </html>

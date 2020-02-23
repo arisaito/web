@@ -36,13 +36,6 @@ a {
   cursor: pointer;
 }
 
-.c-txt {
-
-}
-.c-txt__grey {
-  color: #b8cbe0;
-}
-
 .btn a {
   display: inline-block;
   text-decoration: none;

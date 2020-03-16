@@ -151,11 +151,19 @@ a {
 } */
 
 .box10 {
-  background: #3861d1;
+  background: #d4d4d4;
 }
 
 .box11 {
   background: rgb(247, 247, 247);
+}
+
+.box12 {
+  background: #c1c0c7;
+}
+
+.box13 {
+  background: #ffffff;
 }
 
 .img-pos {
@@ -188,8 +196,7 @@ a {
   height: auto;
   vertical-align: middle;
 }
-
-.art:hover {
+z .art:hover {
   opacity: 0.7;
   transition: 0.5s;
 }
@@ -361,8 +368,8 @@ a {
   .modalWrapper {
     min-width: 350px;
     height: auto;
-    max-height: 400px;
-    padding: 40px;
+    max-height: 90%;
+    padding: 40px 30px;
   }
 
   .flex {

@@ -86,4 +86,20 @@ $(function() {
     $("#modalArea11").fadeOut();
     $.scrollify.enable();
   });
+  $("#openModal12").click(function() {
+    $("#modalArea12").fadeIn();
+    $.scrollify.disable();
+  });
+  $("#closeModal12, #modalBg12").click(function() {
+    $("#modalArea12").fadeOut();
+    $.scrollify.enable();
+  });
+  $("#openModal13").click(function() {
+    $("#modalArea13").fadeIn();
+    $.scrollify.disable();
+  });
+  $("#closeModal13, #modalBg13").click(function() {
+    $("#modalArea13").fadeOut();
+    $.scrollify.enable();
+  });
 });

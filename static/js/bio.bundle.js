@@ -1,1 +1,0 @@
-(()=>{var o=!1,n=0;window.onscroll=function(){n=document.body.scrollTop,console.log(n)},window.onload=function(){navigator.userAgent.match(/iPhone|Android.+Mobile/)&&(o=!0),o&&(window.pageYOffset,console.log(n))}})();

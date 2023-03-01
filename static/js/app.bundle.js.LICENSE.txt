@@ -1,6 +1,0 @@
-/*!
- * $ Simple glitching plugin
- * Author: Igor Brkic <igor@hyperglitch.com>
- * Version 0.0.1
- * Licensed under the MIT license
- */

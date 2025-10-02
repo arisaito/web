@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFI</title>
-    <link rel="stylesheet" href="../static/css/style.css" />
+    <!-- <link rel="stylesheet" href="../static/css/style.css" /> -->
+    <style>
+      body {
+        visibility: hidden;
+      }
+    </style>
   </head>
   <body>
     <div class="nfi">
@@ -15,7 +20,7 @@
             href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/94178976371515388031906573893627262150924912175314874837010911648575437930497"
           >
             <h2>Non-Fungible Island #1</h2>
-            <img src="../static/img/nfi/image-nfi01.png" alt="" />
+            <img src="/img/nfi/image-nfi01.png" alt="" />
           </a>
         </li>
         <li>
@@ -24,10 +29,11 @@
           >
             <h2>Non-Fungible Island #2</h2>
 
-            <img src="../static/img/nfi/image-nfi02.PNG" alt="" />
+            <img src="/img/nfi/image-nfi02.PNG" alt="" />
           </a>
         </li>
       </ul>
     </div>
+    <script type="module" src="/src/ts/pages/nfi.ts"></script>
   </body>
 </html>

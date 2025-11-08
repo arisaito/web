@@ -1,7 +1,7 @@
 # Blender v2.93.4 OBJ File: ''
 # www.blender.org
 mtllib melon.mtl
-o Melon.002
+o melon.002
 v 0.086924 0.784330 -0.864157
 v 0.136498 0.648109 -0.823065
 v 0.184746 0.514335 -0.745971

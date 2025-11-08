@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SECRET SAYS</title>
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#000000" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +18,19 @@
       as="image"
       type="image/svg+xml"
     />
-    <script type="module" crossorigin src="./assets/index-D3orThXI.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BGBPMVjP.css">
+    <script type="module" crossorigin src="./assets/index-CRRIzcPd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DrtNczkE.css">
   </head>
   <body style="visibility: hidden">
-    <div class="fullscreen-button"></div>
+    <div class="menu-button"></div>
+    <div class="menu-wrapper">
+      <button id="menu-fullscreen">fullscreen</button>
+      <button id="menu-title">title</button>
+    </div>
+    <div class="timer-ui">
+      <p>しばらく操作がないため<br />まもなくタイトルに戻ります。</p>
+      <p>画面をタッチすると続けられます。</p>
+    </div>
     <div id="app" class="app">
       <div id="opening" class="opening is-show">
         <div id="opening-kv" class="opening-kv is-show">
@@ -299,7 +309,7 @@
                 <button id="lang-en" class="lang-button">EN</button>
               </div>
             </div>
-            <div class="kv-footer-sound">
+            <!-- <div class="kv-footer-sound">
               <p>SOUND</p>
               <div class="sound-button-wrapper">
                 <button id="sound-on" class="sound-button">ON</button>
@@ -307,7 +317,7 @@
                   OFF
                 </button>
               </div>
-            </div>
+            </div> -->
             <div class="kv-footer-control">
               <p class="kv-footer-control-pc js-translation">
                 ＜視点移動＞画面をドラッグ ＜発砲＞銃をクリック／Spaceキー

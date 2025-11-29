@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swim Lesson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-DVqXIknx.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-lL8zsqec.css">
+  </head>
+  <body style="opacity: 0">
+    <div id="app">
+      <div id="custom-cursor"></div>
+      <button
+        id="secret-menu-button"
+        class="secret-menu-button click-target"
+      ></button>
+      <div id="secret-menu" class="secret-menu">
+        <p>Dev Menu</p>
+        <button id="fullscreen" class="fullscreen click-target">
+          Fullscreen
+        </button>
+        <button id="hana-button" class="hana-button click-target">
+          Back To Hana
+        </button>
+        <button id="reset-button" class="reset-button click-target">
+          Reset
+        </button>
+        <button id="secret-menu-close" class="secret-menu-close click-target">
+          ×
+        </button>
+      </div>
+
+      <!-- Swim Lesson -->
+      <div id="text-ui" class="text-ui">
+        <div id="text-ui-wrapper" class="text-ui-wrapper"></div>
+      </div>
+      <div id="canvas-wrap" class="canvas-wrap">
+        <canvas id="three-canvas" class="three-canvas click-target"></canvas>
+      </div>
+      <div id="sentence" class="sentence jp-font">
+        <p id="sentence-text" class="sentence-text"></p>
+      </div>
+      <div id="frame" class="frame">
+        <div class="frame-top"></div>
+        <div class="frame-bottom"></div>
+        <div class="frame-left"></div>
+        <div class="frame-right"></div>
+      </div>
+      <div id="frame-title" class="frame-title">
+        <h1>スイム・レッスン</h1>
+      </div>
+      <div id="frame-filter" class="frame-filter"></div>
+      <div class="loading-bar">
+        <div class="loading-bar_fill"></div>
+      </div>
+      <div id="item-modal" class="item-modal">
+        <div id="item-modal-bg" class="item-modal-bg"></div>
+        <div id="item-modal-inner" class="item-modal-inner">
+          <img
+            id="item-modal-img"
+            class="item-modal-img"
+            src="./assets/image/photo/00.jpg"
+            alt=""
+          />
+          <p id="item-modal-caption" class="item-modal-caption">花は</p>
+          <div id="item-modal-close" class="item-modal-close click-target">
+            close
+          </div>
+        </div>
+        <button id="item-modal-trash" class="item-modal-trash">
+          <img src="./assets/image/trash.png" alt="trash can" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
